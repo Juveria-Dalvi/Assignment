@@ -1,31 +1,98 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>BOGO Offer</title>
-
   <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
   <div class="container">
 
     <div class="heading-line">
-
       <span>YAY! It’s BOGO</span>
-
     </div>
 
     <div class="option">
-
       <input type="radio" name="unit" id="unit1" />
-
       <label for="unit1">
+        <strong>1 Unit</strong>
+        <span class="badge">10% Off</span>
+        <div class="price">$10.00 USD <s>$24.00 USD</s></div>
+        <div>Standard Price</div>
+      </label>
+    </div>
+
+    <div class="option popular">
+      <div class="popular-label">
+        <div class="triangle-left"></div>
+        <div class="ribbon">MOST POPULAR</div>
+        <div class="triangle-right"></div>
+      </div>
+      <input type="radio" name="unit" id="unit2" checked />
+      <label for="unit2">
+        <strong>2 Unit</strong>
+        <span class="badge">20% Off</span>
+        <div class="price">$18.00 USD <s>$24.00 USD</s></div>
+      </label>
+
+      <div class="unit-details">
+        <label></label>
+        <label>Size</label>
+        <label>Color</label>
+      </div>
+
+      <div class="unit-details">
+        <label>#1</label>
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select>
+          <option>Black</option>
+          <option>White</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+
+      <div class="unit-details">
+        <label>#2</label>
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select>
+          <option>Black</option>
+          <option>White</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="option">
+      <input type="radio" name="unit" id="unit3" />
+      <label for="unit3">
+        <strong>3 Unit</strong>
+        <span class="badge">30% Off</span>
+        <div class="price">$24.00 USD <s>$24.00 USD</s></div>
+      </label>
+    </div>
+
+    <div class="footer">
+      <span>Free Delivery</span>
+      <span>Total : $18.00 USD</span>
+    </div>
+
+    <button class="btn">+ Add to Cart</button>
+    <div class="powered">@ Powered by Pumper</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
